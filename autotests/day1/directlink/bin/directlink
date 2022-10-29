@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+$VERBOSE = nil
+
+Signal.trap :INT do
+  abort "\n(interrupted by SIGINT)"
+end
+
+require_relative "../lib/directlink"
+
+ARGV.each do |link|
+  puts "<= #{link}"
+  begin
+    link, w, h, type = DirectLink(link)
+  rescue DirectLink::ErrorBadLink
+    abort "bad link"
+  end
+  puts "=> #{link}\n   #{type} #{w}x#{h}"
+end
