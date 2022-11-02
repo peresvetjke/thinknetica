@@ -15,4 +15,5 @@ http://automationpractice.com/index.php
 Прочее  
 https://github.com/allure-framework/allure-ruby  
 https://gauge.org/2017/06/13/the-page-objects-anti-pattern/  
-https://github.com/Nakilon/minitest_cuprite
+https://github.com/Nakilon/minitest_cuprite  
+https://github.com/Nakilon/pagerecognizer
