@@ -2,7 +2,7 @@ require "minitest_cuprite"
 minitest_cuprite "headless": false
 
 describe :test do
-  it "test" do
+  it "кол-во товаров в Summer Dresses и цена Printed Chiffon" do
     visit "http://automationpractice.com/index.php"
 
     # найти нужные <a> с соответствующим текстом, чтобы перейти в раздел летних платьев
