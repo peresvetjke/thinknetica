@@ -17,4 +17,3 @@ Allure Framework (для красивых отчетов): https://github.com/al
 Page Object как анти-паттерн: https://gauge.org/2017/06/13/the-page-objects-anti-pattern/  
 Мой пример boilerplate minitest+cuprite: https://github.com/Nakilon/minitest_cuprite  
 Демонстрация возможностей 2d-распознавания страниц: https://github.com/Nakilon/pagerecognizer
-

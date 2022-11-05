@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: docker run -v $(pwd)/autotests/day1/directlink:/checkout ruby:alpine sh -c "cd checkout && gem install bundler && bundle install && bundle exec ruby test.rb"
+      timeout-minutes: 1
