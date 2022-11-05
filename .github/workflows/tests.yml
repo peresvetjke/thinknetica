@@ -17,4 +17,4 @@ jobs:
       timeout-minutes: 1
     - uses: actions/upload-artifact@v3
       with:
-        path: [autotests/day3/browser_autotests/test/reports/*.xml]
+        path: autotests/day3/browser_autotests/test/reports/*.xml
