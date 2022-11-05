@@ -19,6 +19,7 @@ module DirectLink
 end
 
 def DirectLink link
+  return
   raise ::DirectLink::ErrorBadLink.new link unless host = URI(link).host
   case host.split(?.).last(2)
   when %w{ imgur com }
