@@ -3,9 +3,18 @@ on:
   push:
     branches: [master]
 jobs:
-  unit:
+  # unit:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v3
+  #   - run: docker run -v $(pwd)/autotests/day1/directlink:/checkout ruby:alpine sh -c "cd checkout && gem install bundler && bundle install && bundle exec ruby test.rb"
+  #     timeout-minutes: 1
+  browser:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - run: docker run -v $(pwd)/autotests/day1/directlink:/checkout ruby:alpine sh -c "cd checkout && gem install bundler && bundle install && bundle exec ruby test.rb"
+    - run: docker run -v $(pwd)/autotests/day3/browser_autotests:/app ruby:2.6-alpine sh -c "cd app && gem update bundler && apk add build-base git && bundle install && apk add chromium && bundle exec ruby test.rb"
       timeout-minutes: 1
+    - uses: actions/upload-artifact@v3
+      with:
+        path: [autotests/day3/browser_autotests/test/reports/*.xml]
