@@ -15,6 +15,7 @@ https://github.com/minitest/minitest
 https://github.com/grosser/maxitest
 
 Моки  
+https://www.martinfowler.com/bliki/TestDouble.html  
 https://github.com/mailhog/MailHog  
 https://github.com/fakefs/fakefs  
 https://github.com/rr/rr  
