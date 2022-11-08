@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://old.reddit.com/wrong/path.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '38'
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Remaining:
+      - '299'
+      X-Ratelimit-Used:
+      - '1'
+      X-Ratelimit-Reset:
+      - '303'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Moose
+      Content-Type:
+      - application/json; charset=UTF-8
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Moose:
+      - majestic
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 08 Nov 2022 05:34:57 GMT
+      Via:
+      - 1.1 varnish
+      Set-Cookie:
+      - csv=2; Max-Age=63072000; Domain=.reddit.com; Path=/; Secure; SameSite=None
+      - edgebucket=p6pBpg7h3RTsnxrcB0; Domain=reddit.com; Max-Age=63071999; Path=/;  secure
+      - loid=0000000000u31b9hct.2.1667885697086.Z0FBQUFBQmphZXFCUEtEOHVfQ2VpZjJjaDZQMGR4NUFldU11NFg4UUdvWW5EUVpjYUltaVBEeEU3UExwbkpjdGw3REhZSFFpYnhWTjUxckd0RUFkQjZwWFZIVTBTQUhCN2xxQXpsU3VKdTNrbm5Jc0diaHUyOXJBX0s0cTN4ZDRnMDNQLVNNckxKMDU;
+        Domain=reddit.com; Max-Age=63071999; Path=/; expires=Thu, 07-Nov-2024 05:34:57
+        GMT; secure; SameSite=None; Secure
+      - session_tracker=0ibrqWCmlbLiTAzFbw.0.1667885697086.Z0FBQUFBQmphZXFCNEk4LXNFamVVaGJtNzZSVzNDZjBqQ1J2cXg4UXUxNmVUZkxEdnpfT1VHWFU2N2NsTVdTOHl0S2Q5cjNrWmliQWs1SjVfdTk0WXBYc29KWXN4c3ZDcGlQS0FkcjRXbTViWXJ2enR0SVlYSExWQm05eG1JQU1GVTdPR2N3Ry14clU;
+        Domain=reddit.com; Max-Age=7199; Path=/; expires=Tue, 08-Nov-2022 07:34:57
+        GMT; secure; SameSite=None; Secure
+      Cache-Control:
+      - private, max-age=3600
+      Server:
+      - snooserv
+      Report-To:
+      - '{"group": "w3-reporting-nel", "max_age": 14400, "include_subdomains": true,  "endpoints":
+        [{ "url": "https://w3-reporting-nel.reddit.com/reports" }]}, {"group": "w3-reporting",
+        "max_age": 14400, "include_subdomains": true, "endpoints": [{ "url": "https://w3-reporting.reddit.com/reports"
+        }]}'
+      Nel:
+      - '{"report_to": "w3-reporting-nel", "max_age": 14400, "include_subdomains":
+        false, "success_fraction": 1.0, "failure_fraction": 1.0}'
+    body:
+      encoding: UTF-8
+      string: '{"message": "Not Found", "error": 404}'
+  recorded_at: Tue, 08 Nov 2022 05:34:56 GMT
+recorded_with: VCR 6.1.0
