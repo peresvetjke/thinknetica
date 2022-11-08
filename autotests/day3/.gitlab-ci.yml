@@ -1,14 +1,14 @@
 job:
   image: ruby:2.6-alpine
-  variables:
-    TESTS_LOGIN: nakilon@gmail.com
-    TESTS_URL: https://.../
+  # variables:
+  #   TESTS_LOGIN: nakilon@gmail.com
+  #   TESTS_URL: https://.../
   script:
     - gem update bundler
     - apk add build-base
     - bundle install
     - apk add chromium
     - bundle exec ruby test.rb
-  artifacts:
-    paths:
-      - test/reports/*.xml
+  # artifacts:
+  #   paths:
+  #     - test/reports/*.xml
