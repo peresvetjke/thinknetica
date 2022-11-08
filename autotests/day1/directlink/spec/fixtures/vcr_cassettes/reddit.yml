@@ -1,0 +1,237 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://old.reddit.com/r/CatsSittingLikeThis/comments/fjl4ay/the_original.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1549'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Remaining:
+      - '299'
+      X-Ratelimit-Used:
+      - '1'
+      X-Ratelimit-Reset:
+      - '424'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Moose
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Moose:
+      - majestic
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 08 Nov 2022 05:12:56 GMT
+      Via:
+      - 1.1 varnish
+      Vary:
+      - accept-encoding
+      Set-Cookie:
+      - csv=2; Max-Age=63072000; Domain=.reddit.com; Path=/; Secure; SameSite=None
+      - edgebucket=mSG2T05UiCtaR6g5RL; Domain=reddit.com; Max-Age=63071999; Path=/;  secure
+      - loid=0000000000u30qhu0b.2.1667884376517.Z0FBQUFBQmphZVZZVUFFQk5OVGZFMnB0NUhteTFUQlZxdW1VbmFkeXZ0MmxiUXVTWE12X0FMajBrNEtVUGxKNmVRZDAwNVNoSU00bEFwUC1VazBSckxiRm1HQjdqMy0zaXNhWS12MUh2RnBDVWhMZWFqdkFZOTRMN2dsbWhCUVdLMUZCQWczcVB1TGs;
+        Domain=reddit.com; Max-Age=63071999; Path=/; expires=Thu, 07-Nov-2024 05:12:56
+        GMT; secure; SameSite=None; Secure
+      - session_tracker=76FXPkf0WaTDQr7LDL.0.1667884376517.Z0FBQUFBQmphZVZZUXdtQVo3MDVlN0J1amEtTG43aTlKZmVVbW1PVXo2UERlM2RyWEJfTWlZR25ERFZMZlZQeUkxclVxYzBNc3ptNmZGUnNsRFFWWVVlVnJibTVNdmhOR2xMLXZnREVXUDB3TURsck8wMHhteU9RQ2ZyWUtsYzMzcGhYcEdtZlR1Tzc;
+        Domain=reddit.com; Max-Age=7199; Path=/; expires=Tue, 08-Nov-2022 07:12:56
+        GMT; secure; SameSite=None; Secure
+      Cache-Control:
+      - private, max-age=3600
+      Server:
+      - snooserv
+      Report-To:
+      - '{"group": "w3-reporting-nel", "max_age": 14400, "include_subdomains": true,  "endpoints":
+        [{ "url": "https://w3-reporting-nel.reddit.com/reports" }]}, {"group": "w3-reporting",
+        "max_age": 14400, "include_subdomains": true, "endpoints": [{ "url": "https://w3-reporting.reddit.com/reports"
+        }]}'
+      Nel:
+      - '{"report_to": "w3-reporting-nel", "max_age": 14400, "include_subdomains":
+        false, "success_fraction": 1.0, "failure_fraction": 1.0}'
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"kind": "Listing", "data": {"after": null, "dist": 1, "modhash":
+        "", "geo_filter": "", "children": [{"kind": "t3", "data": {"approved_at_utc":
+        null, "subreddit": "CatsSittingLikeThis", "selftext": "", "user_reports":
+        [], "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false,
+        "title": "The original", "link_flair_richtext": [], "subreddit_name_prefixed":
+        "r/CatsSittingLikeThis", "hidden": false, "pwls": null, "link_flair_css_class":
+        null, "downs": 0, "thumbnail_height": 104, "top_awarded_type": null, "parent_whitelist_status":
+        null, "hide_score": false, "name": "t3_fjl4ay", "quarantine": false, "link_flair_text_color":
+        "dark", "upvote_ratio": 1.0, "author_flair_background_color": null, "subreddit_type":
+        "restricted", "ups": 122, "total_awards_received": 0, "media_embed": {}, "thumbnail_width":
+        140, "author_flair_template_id": null, "is_original_content": false, "author_fullname":
+        "t2_1o1sxtby", "secure_media": null, "is_reddit_media_domain": true, "is_meta":
+        false, "category": null, "secure_media_embed": {}, "link_flair_text": null,
+        "can_mod_post": false, "score": 122, "approved_by": null, "is_created_from_ads_ui":
+        false, "author_premium": false, "thumbnail": "https://b.thumbs.redditmedia.com/svHhEFccMZTCi7T3Abfp5pEnzhSWKC4OimdUuEBUo-Y.jpg",
+        "edited": false, "author_flair_css_class": null, "author_flair_richtext":
+        [], "gildings": {}, "post_hint": "image", "content_categories": null, "is_self":
+        false, "mod_note": null, "created": 1584366059.0, "link_flair_type": "text",
+        "wls": null, "removed_by_category": null, "banned_by": null, "author_flair_type":
+        "text", "domain": "i.redd.it", "allow_live_comments": false, "selftext_html":
+        null, "likes": null, "suggested_sort": null, "banned_at_utc": null, "url_overridden_by_dest":
+        "https://i.redd.it/ic0t7aw7g1n41.jpg", "view_count": null, "archived": false,
+        "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18":
+        false, "preview": {"images": [{"source": {"url": "https://preview.redd.it/ic0t7aw7g1n41.jpg?auto=webp&amp;s=ba1247c2a942562c4bcc998b2b40f39eb3382054",
+        "width": 720, "height": 537}, "resolutions": [{"url": "https://preview.redd.it/ic0t7aw7g1n41.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=2060a5f920b02bce0185df602fa4fa82d69888fa",
+        "width": 108, "height": 80}, {"url": "https://preview.redd.it/ic0t7aw7g1n41.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=8cd06df68502947fb8ba12744d68d200ab800cbf",
+        "width": 216, "height": 161}, {"url": "https://preview.redd.it/ic0t7aw7g1n41.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=4ec4bc5445b00a58bd2c00a5510ee7f8aba034c6",
+        "width": 320, "height": 238}, {"url": "https://preview.redd.it/ic0t7aw7g1n41.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5cb628b3f1ca0af73182aa9042bd3ac2ef3553e7",
+        "width": 640, "height": 477}], "variants": {}, "id": "xjXqVTmQc2zovvPMAlxPxclHKgv_KZHKdmgXCi4ElEk"}],
+        "enabled": true}, "all_awardings": [], "awarders": [], "media_only": false,
+        "can_gild": false, "spoiler": false, "locked": false, "author_flair_text":
+        null, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports":
+        null, "distinguished": null, "subreddit_id": "t5_2huup9", "author_is_blocked":
+        false, "mod_reason_by": null, "removal_reason": null, "link_flair_background_color":
+        "", "id": "fjl4ay", "is_robot_indexable": true, "num_duplicates": 0, "report_reasons":
+        null, "author": "Domonety", "discussion_type": null, "num_comments": 0, "send_replies":
+        true, "media": null, "contest_mode": false, "author_patreon_flair": false,
+        "author_flair_text_color": null, "permalink": "/r/CatsSittingLikeThis/comments/fjl4ay/the_original/",
+        "whitelist_status": null, "stickied": false, "url": "https://i.redd.it/ic0t7aw7g1n41.jpg",
+        "subreddit_subscribers": 1037, "created_utc": 1584366059.0, "num_crossposts":
+        0, "mod_reports": [], "is_video": false}}], "before": null}}, {"kind": "Listing",
+        "data": {"after": null, "dist": null, "modhash": "", "geo_filter": "", "children":
+        [], "before": null}}]'
+  recorded_at: Tue, 08 Nov 2022 05:12:56 GMT
+- request:
+    method: get
+    uri: https://old.reddit.com/r/CatsSittingLikeThis/comments/fjl4ay/the_original.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1550'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Remaining:
+      - '299'
+      X-Ratelimit-Used:
+      - '1'
+      X-Ratelimit-Reset:
+      - '160'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-Moose
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Moose:
+      - majestic
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 08 Nov 2022 05:27:20 GMT
+      Via:
+      - 1.1 varnish
+      Vary:
+      - accept-encoding
+      Set-Cookie:
+      - csv=2; Max-Age=63072000; Domain=.reddit.com; Path=/; Secure; SameSite=None
+      - edgebucket=BhbcNsjW4gIpLbVzus; Domain=reddit.com; Max-Age=63071999; Path=/;  secure
+      - loid=0000000000u30x9fm4.2.1667885240409.Z0FBQUFBQmphZWk0VF9Pc1QzT0Q1bW92dTBNdFRKWmlxU2NFZE5MT1hVYzdBU29rUVJFYS1kWGZTck5xZ1BEd2NaUlFVbWloeWYybEsxUVVKcVdoMkVkUDYwT2xZYnhVVVVqbE9OOHEtRTdwMW5iLXNtdnlIRVllWGtBM0tUQUlxNWdqN2d3TTZqM28;
+        Domain=reddit.com; Max-Age=63071999; Path=/; expires=Thu, 07-Nov-2024 05:27:20
+        GMT; secure; SameSite=None; Secure
+      - session_tracker=9icOGfdGRllpu0rc6p.0.1667885240409.Z0FBQUFBQmphZWk0aUxyRDZQR2hGUHptNG52cFZBM0o2MnFxTGZLMm9lZzd3Y3lTQ1FrMXdnVDRzR0tnb09Ya1JSdHdUV1ZiZ1dSS0hXNGtQTlBoV1YwYllZTXBwOW16bElhdDVNbEROR2FfSmdnN2NNelBzQkUxaDRLenhObFlpLUxIemp2SXpad1I;
+        Domain=reddit.com; Max-Age=7199; Path=/; expires=Tue, 08-Nov-2022 07:27:20
+        GMT; secure; SameSite=None; Secure
+      Cache-Control:
+      - private, max-age=3600
+      Server:
+      - snooserv
+      Report-To:
+      - '{"group": "w3-reporting-nel", "max_age": 14400, "include_subdomains": true,  "endpoints":
+        [{ "url": "https://w3-reporting-nel.reddit.com/reports" }]}, {"group": "w3-reporting",
+        "max_age": 14400, "include_subdomains": true, "endpoints": [{ "url": "https://w3-reporting.reddit.com/reports"
+        }]}'
+      Nel:
+      - '{"report_to": "w3-reporting-nel", "max_age": 14400, "include_subdomains":
+        false, "success_fraction": 1.0, "failure_fraction": 1.0}'
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"kind": "Listing", "data": {"after": null, "dist": 1, "modhash":
+        "", "geo_filter": "", "children": [{"kind": "t3", "data": {"approved_at_utc":
+        null, "subreddit": "CatsSittingLikeThis", "selftext": "", "user_reports":
+        [], "saved": false, "mod_reason_title": null, "gilded": 0, "clicked": false,
+        "title": "The original", "link_flair_richtext": [], "subreddit_name_prefixed":
+        "r/CatsSittingLikeThis", "hidden": false, "pwls": null, "link_flair_css_class":
+        null, "downs": 0, "thumbnail_height": 104, "top_awarded_type": null, "parent_whitelist_status":
+        null, "hide_score": false, "name": "t3_fjl4ay", "quarantine": false, "link_flair_text_color":
+        "dark", "upvote_ratio": 1.0, "author_flair_background_color": null, "subreddit_type":
+        "restricted", "ups": 119, "total_awards_received": 0, "media_embed": {}, "thumbnail_width":
+        140, "author_flair_template_id": null, "is_original_content": false, "author_fullname":
+        "t2_1o1sxtby", "secure_media": null, "is_reddit_media_domain": true, "is_meta":
+        false, "category": null, "secure_media_embed": {}, "link_flair_text": null,
+        "can_mod_post": false, "score": 119, "approved_by": null, "is_created_from_ads_ui":
+        false, "author_premium": false, "thumbnail": "https://b.thumbs.redditmedia.com/svHhEFccMZTCi7T3Abfp5pEnzhSWKC4OimdUuEBUo-Y.jpg",
+        "edited": false, "author_flair_css_class": null, "author_flair_richtext":
+        [], "gildings": {}, "post_hint": "image", "content_categories": null, "is_self":
+        false, "mod_note": null, "created": 1584366059.0, "link_flair_type": "text",
+        "wls": null, "removed_by_category": null, "banned_by": null, "author_flair_type":
+        "text", "domain": "i.redd.it", "allow_live_comments": false, "selftext_html":
+        null, "likes": null, "suggested_sort": null, "banned_at_utc": null, "url_overridden_by_dest":
+        "https://i.redd.it/ic0t7aw7g1n41.jpg", "view_count": null, "archived": false,
+        "no_follow": false, "is_crosspostable": false, "pinned": false, "over_18":
+        false, "preview": {"images": [{"source": {"url": "https://preview.redd.it/ic0t7aw7g1n41.jpg?auto=webp&amp;s=ba1247c2a942562c4bcc998b2b40f39eb3382054",
+        "width": 720, "height": 537}, "resolutions": [{"url": "https://preview.redd.it/ic0t7aw7g1n41.jpg?width=108&amp;crop=smart&amp;auto=webp&amp;s=2060a5f920b02bce0185df602fa4fa82d69888fa",
+        "width": 108, "height": 80}, {"url": "https://preview.redd.it/ic0t7aw7g1n41.jpg?width=216&amp;crop=smart&amp;auto=webp&amp;s=8cd06df68502947fb8ba12744d68d200ab800cbf",
+        "width": 216, "height": 161}, {"url": "https://preview.redd.it/ic0t7aw7g1n41.jpg?width=320&amp;crop=smart&amp;auto=webp&amp;s=4ec4bc5445b00a58bd2c00a5510ee7f8aba034c6",
+        "width": 320, "height": 238}, {"url": "https://preview.redd.it/ic0t7aw7g1n41.jpg?width=640&amp;crop=smart&amp;auto=webp&amp;s=5cb628b3f1ca0af73182aa9042bd3ac2ef3553e7",
+        "width": 640, "height": 477}], "variants": {}, "id": "xjXqVTmQc2zovvPMAlxPxclHKgv_KZHKdmgXCi4ElEk"}],
+        "enabled": true}, "all_awardings": [], "awarders": [], "media_only": false,
+        "can_gild": false, "spoiler": false, "locked": false, "author_flair_text":
+        null, "treatment_tags": [], "visited": false, "removed_by": null, "num_reports":
+        null, "distinguished": null, "subreddit_id": "t5_2huup9", "author_is_blocked":
+        false, "mod_reason_by": null, "removal_reason": null, "link_flair_background_color":
+        "", "id": "fjl4ay", "is_robot_indexable": true, "num_duplicates": 0, "report_reasons":
+        null, "author": "Domonety", "discussion_type": null, "num_comments": 0, "send_replies":
+        true, "media": null, "contest_mode": false, "author_patreon_flair": false,
+        "author_flair_text_color": null, "permalink": "/r/CatsSittingLikeThis/comments/fjl4ay/the_original/",
+        "whitelist_status": null, "stickied": false, "url": "https://i.redd.it/ic0t7aw7g1n41.jpg",
+        "subreddit_subscribers": 1037, "created_utc": 1584366059.0, "num_crossposts":
+        0, "mod_reports": [], "is_video": false}}], "before": null}}, {"kind": "Listing",
+        "data": {"after": null, "dist": null, "modhash": "", "geo_filter": "", "children":
+        [], "before": null}}]'
+  recorded_at: Tue, 08 Nov 2022 05:27:20 GMT
+recorded_with: VCR 6.1.0
