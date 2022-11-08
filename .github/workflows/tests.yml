@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: docker run -v $(pwd)/autotests/day3/browser_autotests:/app ruby:2.6-alpine sh -c "cd app && gem update bundler && apk add build-base git && bundle install && apk add chromium && bundle exec ruby test.rb"
-      timeout-minutes: 1
+      timeout-minutes: 5
     - uses: actions/upload-artifact@v3
       with:
         path: autotests/day3/browser_autotests/test/reports/*.xml
