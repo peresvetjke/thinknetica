@@ -3,7 +3,7 @@ minitest_cuprite "headless": false
 
 describe :test do
   it "кол-во товаров в Summer Dresses и цена Printed Chiffon" do
-    visit "http://automationpractice.com/index.php"
+    visit "http://localhost:4567/index.php"
 
     # найти нужные <a> с соответствующим текстом, чтобы перейти в раздел летних платьев
     find(:xpath, "//???").hover    # Dresses
