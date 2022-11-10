@@ -1,9 +1,9 @@
+# frozen_string_literal: true
+
 require_relative '../../spec/spec_helper'
 require_relative '../../lib/directlink'
 require "open3"
 require "shellwords"
-
-# frozen_string_literal: true
 
 RSpec.describe DirectLink, type: :bin do
 	subject { Open3.capture2e "./bin/directlink #{input.shellescape}" }
@@ -13,12 +13,18 @@ RSpec.describe DirectLink, type: :bin do
 
   after { VCR.eject_cassette }
 
+  shared_examples 'returns error' do
+    it 'returns error', :aggregate_failures do
+      expect(output).to include "bad link\n"
+      expect(status).to eq 1
+    end
+  end
+
   context 'when imgur' do
     context 'when valid url' do
       before { VCR.insert_cassette 'imgur' }
 
       let(:input) { "https://imgur.com/8IX7Mp9" }
-      let(:expected_status) { 0 }
       let(:expected_output) do
         <<~HEREDOC
           <= #{input}
@@ -27,28 +33,24 @@ RSpec.describe DirectLink, type: :bin do
           HEREDOC
       end
 
-      it { expect(output).to eq expected_output }
-      it { expect(status).to eq expected_status }
+      it 'returns successful response', :aggregate_failures do
+        expect(output).to eq expected_output
+        expect(status).to eq 0
+      end
     end
 
     context 'when invalid input' do
-      let(:error_message) { "bad link\n" }
-      let(:expected_status) { 1 }
-  
       context 'when not a link' do
         let(:input) { "test" }
-  
-        it { expect(output).to include error_message }
-        it { expect(status).to eq expected_status }
+
+        it_behaves_like 'returns error'
       end
-  
+
       context 'when bad pattern' do
         let(:input) { "https://imgur.com/a/badlinkpattern" }
-  
-        it { expect(output).to include error_message }
-        it { expect(status).to eq expected_status }
+
+        it_behaves_like 'returns error'
       end
-  
     end
   end
 
@@ -57,8 +59,7 @@ RSpec.describe DirectLink, type: :bin do
       before { VCR.insert_cassette 'reddit' }
 
       let(:input) { "https://old.reddit.com/r/CatsSittingLikeThis/comments/fjl4ay/the_original" }
-      let(:image_url) { "https://preview.redd.it/ic0t7aw7g1n41.jpg" }
-      let(:expected_status) { 0 }
+      let(:image_url) { "https://i.redd.it/ic0t7aw7g1n41.jpg" }
       let(:expected_output) do
         <<~HEREDOC
           <= #{input}
@@ -67,30 +68,26 @@ RSpec.describe DirectLink, type: :bin do
           HEREDOC
       end
 
-      it { expect(output).to eq expected_output }
-      it { expect(status).to eq expected_status }
+      it 'returns successful response', :aggregate_failures do
+        expect(output).to eq expected_output
+        expect(status).to eq 0
+      end
     end
 
     context 'when invalid input' do
       before { VCR.insert_cassette 'reddit_invalid' }
 
-      let(:error_message) { "bad link\n" }
-      let(:expected_status) { 1 }
-  
       context 'when not a link' do
         let(:input) { "test" }
-  
-        it { expect(output).to include error_message }
-        it { expect(status).to eq expected_status }
+
+        it_behaves_like 'returns error'
       end
-  
+
       context 'when bad pattern' do
         let(:input) { 'https://old.reddit.com/wrong/path' }
-  
-        it { expect(output).to include error_message }
-        it { expect(status).to eq expected_status }
+
+        it_behaves_like 'returns error'
       end
-  
     end
   end
 end

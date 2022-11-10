@@ -44,7 +44,7 @@ RSpec.describe DirectLink, type: :lib do
 
       let(:link) { "https://old.reddit.com/r/CatsSittingLikeThis/comments/fjl4ay/the_original" }
 
-      it { is_expected.to eq ["https://preview.redd.it/ic0t7aw7g1n41.jpg", 720, 537, :jpg] }
+      it { is_expected.to eq ["https://i.redd.it/ic0t7aw7g1n41.jpg", 720, 537, :jpg] }
     end
 
     context 'when url is incorrect' do
