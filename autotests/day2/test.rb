@@ -8,18 +8,17 @@ def with_class(klass)
 end
 
 describe :test do
-  let(:dresses_xpath) { "//*#{with_class('menu-content')}/li/a[@title='Dresses']" }
   let(:printed_chiffon_dress_price) do
     find(:css, '.product_list')
-      .find(:xpath, "//*[contains(text(), 'Printed Chiffon Dress')]/../..\
-                     //div#{with_class('content_price')}/*[@itemprop='price']")
+      .find(:xpath, "//*[contains(text(), 'Printed Chiffon Dress')]/ancestor::li\
+                     //*#{with_class('content_price')}/*[@itemprop='price']")
       .text
   end
 
   before do
     visit 'http://localhost:4567/index.php'
-    find(:xpath, dresses_xpath).hover # Dresses
-    find(:xpath, "#{dresses_xpath}/../ul//a[@title='Summer Dresses']").click # Summer Dresses
+    find(:xpath, "//*#{with_class('menu-content')}//a[@title='Dresses']").hover # Dresses
+    find(:xpath, "//*#{with_class('menu-content')}//*[@title='Summer Dresses']").click
   end
 
   it 'displays summer dressees list' do
