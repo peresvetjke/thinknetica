@@ -4,3 +4,6 @@ gem "fastimage"
 
 gem "minitest"
 gem "webmock"
+gem "rspec"
+gem "vcr"
+gem "faraday_middleware"
